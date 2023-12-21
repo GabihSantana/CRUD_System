@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+html, body {
+    scroll-behavior: smooth;    
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+body{
+    background-image: url(../Imagens/veterinária.png);
+    background-size: cover;
+}
+
+.Login{
+    display: grid;
+    place-items: center;
+    background-color: #DFC7AB;
+    width: 50%;
+    height: 100%;
+}
+
+#email:focus + label, #senha:focus + label{
+    color: #338d87;
+}
+
+#email:focus, #senha:focus{
+    border-bottom: 1px solid #338d87;
+    box-shadow: 0 1px 0 0 #338d87;
+  }
+
+.input-field label {
+    color: gray;
+}
+
+.prefix.active {
+    color: #338d87;
+  }
+
+.botao{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+input[type="reset"], input[type="submit"]{
+    font-weight: 600;
+}
