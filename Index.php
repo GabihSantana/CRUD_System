@@ -23,6 +23,12 @@
         echo "</script>";
     }     
     //usuário: joao.silva@vetforpet.com - senha: 12345  
+    if(isset($_GET['errobd'])){
+        echo "<script>";
+        echo "const erro = 'Erro na conexão com o banco de dados!';";
+        echo "alert(erro)";
+        echo "</script>";
+    }    
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +46,7 @@
 </head>
 <body>
     <div class="Login">
-        <form method="POST" action="bd_verificacao.php">
+        <form method="POST" action="model/bd_verificacao.php">
             <h1>Bem-vindo!</h1> 
             <br>
             <div class="input-field col s6">
